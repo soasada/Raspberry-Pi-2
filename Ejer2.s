@@ -8,16 +8,16 @@
 ldr r0, =GPBASE
 /* guia bits  xx999888777666555444333222111000*/
 mov r1, #0b00001000000000000000000000000000
-str r1, [r0, #GPFSEL0] @ Configura GPIO 9 como salida
+str r1, [r0, #GPFSEL0] @ Configura GPIO 9 como salida, GPIO 2 y GPIO 3 como entrada
 
 mov r1, #0b00000000000000000000000000000001
-str r1, [r0, #GPFSEL1] @ Configura GPIO 10 como salida
+str r1, [r0, #GPFSEL1] @ Configura GPIO 10 como salida, GPIO 2 y GPIO 3 como entrada
 
 mov r1, #0b00000000000000000000011000000000
 str r1, [r0, #GPSET0] @ Enciende GPIO 9 y GPIO 10
 
-mov r2, #0b00000000000000000000000000000100 @ Configura el boton GPIO 2 como entrada
-mov r4, #0b00000000000000000000000000001000 @ Configura el boton GPIO 3 como entrada
+mov r2, #0b00000000000000000000000000000100 @ Mascara de GPIO 2
+mov r4, #0b00000000000000000000000000001000 @ Mascara de GPIO 3
 apagar: 
 	ldr r3, [r0, #GPLEV0]
 	tst r3, r2
