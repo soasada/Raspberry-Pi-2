@@ -47,7 +47,7 @@ irq_handler:
 	
 	ldr    r1, [r0, #STCLO]
 	add    r1, #0x40000
-	str    r1, [r0, #STC1]		@ 4.19 seconds
+	str    r1, [r0, #STC1]		@ 0.4 seconds
 	
 	pop    {r0, r1,r2}
 	subs   pc, lr, #4
