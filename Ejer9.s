@@ -31,8 +31,8 @@ irq_handler:
 	str    r2, [r1]
 	
 	mov    r1, #0b00000000000000000000001000000000
-	strne  r1, [r0, #GPSET0]	@ Turn on if variable is 1
-	streq  r1, [r0, #GPCLR0]	@ Turn off if variable is 1
+	strne  r1, [r0, #GPSET0]	@ Turn on if variable is distinct 0
+	streq  r1, [r0, #GPCLR0]	@ Turn off if variable is equal 0
 	
 	ldr    r0, =STBASE
         mov    r1, #0b0010
