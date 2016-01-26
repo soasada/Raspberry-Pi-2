@@ -1,0 +1,76 @@
+
+notaFS:
+.word	RE 
+.word	MI 
+.word	FA 
+.word	SOL 
+.word	LA 
+.word	FA 
+.word	SOLs 
+.word	MI 
+.word	SOL 
+.word	FA 
+.word	RE 
+.word	MI 
+.word	FA 
+.word	SOL 
+.word	LA 
+.word	REs 
+.word	DOH 
+.word	RE 
+.word	MI 
+.word	FA 
+.word	SOL 
+.word	LA 
+.word	FA 
+.word	SOLs 
+.word	MI 
+.word	SOL 
+.word	FA 
+.word	REs 
+.word	DOHs 
+.word	DOH 
+.word	SI 
+.word	SIb 
+.word	SI 
+.word	LA 
+.word	REs 
+
+
+duratFS:	
+	
+.word	CORP
+.word	FUS
+.word	CORP
+.word	FUS
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	CORP
+.word	FUS
+.word	CORP
+.word	FUS
+.word	NG
+.word	NG
+.word	RED
+.word	CORP
+.word	FUS
+.word	CORP
+.word	FUS
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	NG
+.word	CORP
+.word	FUS
+.word	CORP
+.word	FUS
+.word	BL
+.word	NG
+.word	NG
+.word	NG	
